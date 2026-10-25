@@ -4,79 +4,332 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ffffff">
-  <title>付欧瑞 | 北京大学</title>
-  <meta name="description" content="付欧瑞，北京大学人工智能方向博士生。教育经历、上下文分割与眼科大模型研究、多模态 Agent 实习经历。">
-  <meta property="og:title" content="付欧瑞 | 北京大学">
-  <meta property="og:description" content="教育经历 · 科研经历 · 实习经历">
+  <meta name="site-build" content="minimal-light-20261025">
+  <title>付欧瑞 · Orfu | 北京大学</title>
+  <meta name="description" content="付欧瑞，北京大学人工智能方向博士生。关注上下文分割、医学影像分析与多模态 Agent。">
+  <meta property="og:title" content="付欧瑞 · Orfu | 北京大学">
+  <meta property="og:description" content="教育经历、科研工作与多模态 Agent 实践。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forypipi.github.io/">
   <link rel="canonical" href="https://forypipi.github.io/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <style id="minimal-light-theme">
+  body { background-color: #fff; padding: 0px; font: 16.0px/1.5 Crimson Pro, serif; color: #595959; font-weight: 400; margin: 0; }
+
+.pub-row { display: flex; align-items: center; }
+
+.social-icons a { display: inline-block; height: 2.4rem; width: 2.4rem; background-color: transparent; color: #043361 !important; border-radius: 100%; text-align: center; font-size: 1.15rem; line-height: 2.5rem; margin-right: 1rem; }
+
+.social-icons a:last-child { margin-right: 0; }
+
+.social-icons a:hover { background-color: white; color: black; transform: scale(1.2); }
+
+/*
+.social-icons a:after { content: ''; display: block; margin: 0px; height: 1px; width: 0px; background: transparent; transition: width .5s ease, background-color .5s ease; } .social-icons a:hover:after { width: 100%; background: #337ab7; } */
+.icon-button { background-color: white; border-radius: 3.6rem; cursor: pointer; display: inline-block; font-size: 2.0rem; height: 3.6rem; line-height: 3.6rem; margin: 0 5px; position: relative; text-align: center; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; width: 3.6rem; }
+
+.icon-button span { border-radius: 0; display: block; height: 0; left: 50%; margin: 0; position: absolute; top: 50%; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; width: 0; }
+
+.icon-button:hover span { width: 3.6rem; height: 3.6rem; border-radius: 3.6rem; margin: -1.8rem; }
+
+.twitter span { background-color: #4099ff; }
+
+.facebook span { background-color: #4286f4; }
+
+.linkedin span { background-color: #0077B5; }
+
+.github span { background-color: #000; }
+
+email { font-size: 14px; font-family: "Ubuntu Mono"; }
+
+.icon-button i { background: none; color: white; height: 3.6rem; left: 0; line-height: 3.6rem; position: absolute; top: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; width: 3.6rem; z-index: 10; }
+
+.icon-button .icon-twitter { color: #4099ff; }
+
+.icon-button .icon-facebook { color: #4286f4; }
+
+.icon-button .icon-github { color: #000; }
+
+.icon-button .icon-linkedin { color: #0077B5; }
+
+.icon-button:hover .icon-twitter, .icon-button:hover .icon-facebook, .icon-button:hover .icon-github, .icon-button:hover .icon-linkedin { color: white; }
+
+autocolor { color: #595959; }
+
+lightonly { visibility: visible; }
+
+darkonly { visibility: hidden; }
+
+education { font-weight: 500; font-size: 115%; }
+
+papertitle { font-weight: 600; font-size: 100%; }
+
+.image { border-radius: 0.35em; border: 0; display: inline-block; position: relative; }
+
+.image:before { -moz-transition: opacity 0.2s ease-in-out; -webkit-transition: opacity 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; border-radius: 0.35em; content: ''; display: block; height: 100%; left: 0; opacity: 0.5; position: absolute; top: 0; width: 100%; }
+
+.image.avatar { border-radius: 100%; }
+
+.image.avatar:before { display: none; }
+
+.image.avatar img { border-radius: 100%; width: 45%; padding: 20px; }
+
+#header .image.avatar { margin: 0 0 1em 0; width: 8.00em; }
+
+h3, h4, h5, h6 { font-weight: 600; color: #043361; margin: 0 0 20px; }
+
+h1 { font-weight: 500; color: #043361; margin: 0 0 20px; }
+
+h2 { color: #043361; font-weight: 500; margin: 2px 0px 15px; font-size: 157%; }
+
+p, ul, ol, table, pre, dl { margin: 0 0 20px; }
+
+h1, h2, h3 { line-height: 1.1; }
+
+h1 { font-size: 28px; }
+
+a { color: #39c; text-decoration: none; }
+
+a:hover { color: #069; }
+
+a small { font-size: 11px; color: #777; margin-top: -0.3em; display: block; }
+
+a:hover small { color: #777; }
+
+.wrapper { width: 960px; margin: 0 auto; }
+
+blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 20px; font-style: italic; }
+
+code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; }
+
+pre { max-width: 500px; padding: 8px 15px; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+
+th, td { text-align: left; padding: 5px 10px; border-bottom: 1px solid #e5e5e5; }
+
+dt { color: #444; font-weight: 500; }
+
+th { color: #444; }
+
+img { max-width: 100%; }
+
+header { width: 232px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; padding-top: 4.0em; text-align: center; }
+
+header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 270px; }
+
+header li { width: 89px; float: left; border-right: 1px solid #e0e0e0; height: 40px; }
+
+header li:first-child a { border-radius: 5px 0 0 5px; }
+
+header li:last-child a { border-radius: 0 5px 5px 0; }
+
+header ul a { line-height: 1; font-size: 11px; color: #999; display: block; text-align: center; padding-top: 6px; height: 34px; }
+
+header ul a:hover { color: #999; }
+
+header ul a:active { background-color: #f0f0f0; }
+
+strong { color: #222; font-weight: 500; }
+
+header ul li + li + li { border-right: none; width: 89px; }
+
+header ul a strong { font-size: 14px; display: block; color: #222; }
+
+section { width: 650px; float: right; padding-top: 4.0em; padding-bottom: 50px; }
+
+small { font-size: 11px; }
+
+hr { border: 0; background: #e5e5e5; height: 1px; margin: 0 0 20px; }
+
+footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-smoothing: subpixel-antialiased; text-align: center; }
+
+@media print, screen and (max-width: 960px) { .pub-row { display: flex; align-items: center; }
+  div.wrapper { width: auto; margin: 0; }
+  header, section, footer { float: none; position: static; width: auto; }
+  header { padding-right: 320px; }
+  section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }
+  header a small { display: inline; }
+  header ul { position: absolute; right: 50px; top: 52px; }
+  .image.avatar img { border-radius: 100%; width: 117px; padding: 20px; }
+  #head1o2 { visibility: hidden; }
+  #head2o2 { visibility: hidden; } }
+@media print, screen and (max-width: 960px) { body { word-wrap: break-word; padding: 15px; }
+  .pub-row { display: flex; align-items: center; }
+  header { padding: 0; }
+  pre, code { word-wrap: normal; } }
+@media print, screen and (max-width: 480px) { .pub-row { display: block; align-items: center; }
+  body { padding: 15px; }
+  header ul { width: 99%; }
+  header li, header ul li + li + li { width: 33%; }
+  .image.avatar img { border-radius: 100%; width: 95px; padding: 20px; }
+  #head1o2 { visibility: hidden; }
+  #head2o2 { visibility: hidden; } }
+@media print { body { padding: 0.4in; font-size: 12pt; color: #444; } }
+.biblink { text-decoration: none; display: inline; margin-right: 0px; }
+
+.fakelink { text-decoration: none; cursor: pointer; }
+
+.bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
+
+
+/* Chinese content adaptation of yaoyao-liu/minimal-light (CC0-1.0). */
+:root{--navy:#253f56;--accent:#346b91;--muted:#7d8790;--line:#e5e9ed;--soft:#f5f8fa;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-padding-top:30px}
+body{background:#fff;color:#46515b;font:14px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",Arial,sans-serif;padding:0;overflow-wrap:break-word}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:#142f48;text-decoration:underline;text-underline-offset:4px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+div.wrapper{width:1080px;max-width:calc(100% - 80px);margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:82px;align-items:start}
+.profile{width:auto;float:none;position:sticky;top:48px;padding:0;margin:64px 0 30px;text-align:left}
+.name-mark{display:grid;place-content:center;width:76px;height:76px;background:#edf2f6;border:1px solid #e1e8ee;border-radius:50%;font:31px/1 Georgia,serif;letter-spacing:-2px;color:var(--navy);position:relative;margin-bottom:24px}
+.name-mark span{display:inline;position:absolute;left:53px;top:39px;color:#7496af;font-size:23px}
+.name-mark:hover{text-decoration:none;background:#e6edf3}
+.profile h1{color:var(--navy);font-size:28px;font-weight:600;line-height:1.5;margin:0 0 9px}
+.profile h1 span{font:20px Georgia,serif;font-weight:400;margin-left:9px;color:#8b939b}
+.profile p{margin:0}
+.profile .position{font-size:13px;color:#3d4b59;margin-bottom:3px}
+.affiliation{font-size:12px;color:#6d7883}
+.profile .bio{font-size:12px;line-height:1.9;color:#78838e;margin:22px 0 19px}
+.social-links{display:flex;gap:12px;align-items:center;font-size:12px;margin-bottom:8px}
+.social-links span{color:#bbc3c9}
+.email{font-size:11px;letter-spacing:.1px}
+.profile nav{border-top:1px solid var(--line);padding-top:23px;margin-top:27px;display:flex;flex-direction:column;gap:0}
+.profile nav a{display:flex;justify-content:space-between;align-items:center;color:#51606d;padding:8px 0;font-size:13px}
+.profile nav a small{display:inline;font-size:10px;color:#a0a8af;margin:0;letter-spacing:.2px}
+.profile nav a:hover{color:var(--accent);text-decoration:none}
+.profile .profile-footnote{font-size:10px;line-height:1.9;color:#9aa3ac;margin-top:38px}
+.content{min-width:0;padding-top:64px}
+.content-section{float:none;width:auto;padding:0 0 42px;border:0;margin:0}
+.section-heading{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:25px}
+.section-heading h2{font-size:22px;line-height:1.5;color:var(--navy);font-weight:600;margin:0;letter-spacing:.4px}
+.section-heading>span{font-size:9px;letter-spacing:1.8px;color:#a2aab1}
+h3,h4{font-family:inherit;color:var(--navy);font-size:15px;line-height:1.6;font-weight:600;margin:0}
+p{margin:0 0 12px}
+.education-list{padding-left:19px;border-left:1px solid #dee5ea;margin-left:3px}
+.education-item{position:relative;margin-bottom:23px}
+.education-item:last-child{margin-bottom:0}
+.education-item:before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;border:2px solid #859daf;position:absolute;left:-23px;top:9px}
+.education-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.date{font-size:10px;color:#8b959e;white-space:nowrap;font-variant-numeric:tabular-nums}
+.education-item p{font-size:13px;line-height:1.8;margin:4px 0 0}
+.education-item .muted{font-size:11px;color:#87919b}
+.honor{font-size:11px;color:#7c8791;margin:23px 0 0;padding-left:23px}
+.honor>span{color:var(--accent);margin-right:12px;font-size:10px}
+.publications{margin-top:0}
+.section-intro{font-size:12px;color:#7e8993;margin:-8px 0 28px;line-height:1.9}
+.paper{padding:0 0 28px;margin:0 0 29px;border-bottom:1px solid var(--line)}
+.paper:last-of-type{padding-bottom:0;border-bottom:0;margin-bottom:20px}
+.pub-row{display:grid;grid-template-columns:165px minmax(0,1fr);gap:24px;align-items:center;margin-bottom:19px}
+.teaser-link{display:flex;flex-direction:column;gap:8px;min-width:0;background:#fafbfc;border:1px solid #e9edf0;border-radius:6px;padding:12px 10px 7px}
+.teaser-link:hover{border-color:#bccbd6;text-decoration:none}
+.teaser{width:100%;height:103px;object-fit:contain;display:block;margin:0;border-radius:0;box-shadow:none}
+.teaser-link>span{font-size:9px;text-align:right;color:#879cac}
+.paper-index{font-size:10px;letter-spacing:1px;color:#a0a9b1;margin:0 0 5px}
+.paper-index span{margin-left:10px;letter-spacing:0;color:#83929e}
+.paper-heading h3{font-size:16px;line-height:1.55;margin:0 0 5px}
+.paper-title{font-size:11px;line-height:1.6;color:#7b8791;margin:0 0 9px}
+.paper-meta{font-size:10px;color:#75818c;margin:0 0 4px;line-height:1.9}
+.paper-meta>span{padding:0 4px;color:#b2bcc4}
+.paper-meta em{font-style:normal;font-size:9px;padding:2px 6px;color:#697d8d;background:#eef2f5;border-radius:3px;margin-left:5px;white-space:nowrap}
+.paper-description p,.internship-entry>p{font-size:14px;line-height:1.95;margin:0 0 12px}
+.paper-description p:last-child{margin-bottom:0}
+.finding{color:#516573}
+strong{font-weight:600;color:var(--navy)}
+.research-note{font-size:10px;color:#99a2aa;margin:0}
+.internship-entry .role{font-size:11px;color:#8b959e;margin:5px 0 18px}
+.internship-entry h4{font-size:14px;font-weight:500;margin-bottom:11px}
+.page-footer{border-top:1px solid var(--line);padding:18px 0 30px;display:flex;justify-content:space-between;gap:10px;color:#a1a9b1;font-size:10px}
+.page-footer a{color:#7e94a5}
+.skip-link:not(:focus){position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link:focus{display:block;padding:8px 20px}
+@media(max-width:1000px){div.wrapper{max-width:calc(100% - 52px);grid-template-columns:205px minmax(0,1fr);gap:42px}.pub-row{grid-template-columns:130px minmax(0,1fr);gap:18px}.teaser{height:98px}.education-top{flex-wrap:wrap;gap:3px 10px}.paper-heading h3{font-size:15px}.profile{top:30px}}
+@media(max-width:760px){body{padding:0}div.wrapper{display:block;width:auto;max-width:calc(100% - 40px);margin:auto}.profile{position:static;text-align:left;width:100%;padding:0;margin:30px 0 0;display:grid;grid-template-columns:62px 1fr;column-gap:17px}.name-mark{grid-row:1/4;margin:0;width:62px;height:62px;font-size:27px}.name-mark span{left:43px;top:31px;font-size:20px}.profile h1{font-size:23px;margin:0 0 2px;line-height:1.4}.profile h1 span{font-size:17px}.profile .position{font-size:12px;line-height:1.7;margin:0}.affiliation{font-size:11px;line-height:1.7}.profile .bio{grid-column:1/-1;margin:16px 0 12px;font-size:12px}.profile .bio br{display:none}.social-links{grid-column:1/-1;font-size:12px;margin:0 0 4px}.email{grid-column:1/-1;font-size:11px}.profile nav{grid-column:1/-1;flex-direction:row;justify-content:space-between;padding-top:13px;margin-top:19px;border-top:1px solid var(--line);gap:18px}.profile nav a{font-size:12px;gap:5px}.profile nav a small{font-size:8px}.profile .profile-footnote{display:none}.content{padding-top:32px}.content-section{padding-bottom:34px}.section-heading{margin-bottom:22px;padding-bottom:10px;gap:12px}.section-heading h2{font-size:20px}.section-heading>span{font-size:8px}.education-item p{font-size:12px}.education-item .muted{font-size:11px}.education-top h3{font-size:14px}.honor{font-size:10px;line-height:1.9;padding-left:21px}.pub-row{grid-template-columns:103px minmax(0,1fr);gap:14px;align-items:start}.teaser-link{padding:10px 7px 6px;margin-top:3px}.teaser{height:83px}.paper-heading h3{font-size:14px}.paper-title{font-size:10px;line-height:1.6}.paper-index{font-size:9px}.paper-meta{font-size:9px}.paper-meta>span{padding:0 2px}.paper-meta em{font-size:8px;padding:1px 4px}.date{font-size:9px}.paper-description p,.internship-entry>p{font-size:13px;line-height:1.95}.paper{padding-bottom:23px;margin-bottom:26px}.section-intro{font-size:11px;margin-bottom:22px}.page-footer{font-size:9px;padding-bottom:24px}.internship-entry .education-top{display:block}.internship-entry .education-top h3{margin-bottom:4px}}
+@media(max-width:360px){div.wrapper{max-width:calc(100% - 30px)}.profile nav a small{display:none}.pub-row{grid-template-columns:90px minmax(0,1fr);gap:12px}.paper-heading h3{font-size:13px}}
+@media print{body{padding:0;font-size:10pt}div.wrapper{display:block;max-width:none;width:auto}.profile{position:static;width:auto;margin:0 0 20px;display:block;padding:0}.name-mark,.profile nav,.profile-footnote,.teaser-link,.page-footer{display:none!important}.content{padding:0}.pub-row{display:block}.content-section{padding-bottom:20px}h2,h3,.pub-row{break-after:avoid}.paper{break-inside:avoid}.profile .bio{margin:8px 0}.profile h1{font-size:24px}.section-heading{margin-bottom:15px}.paper-description p,.internship-entry>p{font-size:10pt}}
+
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到正文</a>
-  <header>
-    <h1>付欧瑞 <span>Orfu</span></h1>
-    <p>北京大学未来技术学院 · 人工智能方向博士生</p>
-    <p>研究方向：计算机视觉、上下文分割、多模态 Agent 与医学影像分析</p>
-    <p class="contact"><a href="mailto:orfu@stu.pku.edu.cn">orfu@stu.pku.edu.cn</a><span aria-hidden="true"> / </span><a href="https://github.com/forypipi" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-    <nav aria-label="页面导航"><a href="#education">教育经历</a><a href="#research">科研经历</a><a href="#internship">实习经历</a></nav>
-  </header>
-  <main id="main">
-    <section id="education" aria-labelledby="education-title">
-      <h2 id="education-title">教育经历</h2>
-      <article class="education-entry">
-        <div class="entry-heading"><h3>北京大学</h3><p class="date">2023.09 — 至今</p></div>
-        <p>人工智能 · 博士在读，预计 2028 年 6 月毕业</p>
-        <p class="secondary">未来技术学院</p>
-      </article>
-      <article class="education-entry">
-        <div class="entry-heading"><h3>北京理工大学</h3><p class="date">2019.09 — 2023.06</p></div>
-        <p>数据科学与大数据技术 · 学士</p>
-        <p class="secondary">美国大学生数学建模竞赛 Outstanding Winner（特等奖）；校级优秀毕业生；校级奖学金。</p>
-      </article>
-    </section>
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">科研经历</h2>
-      <article class="research-entry">
-        <div class="entry-heading"><h3>IIR：图间与图内特征细化</h3><p class="date">2024.08 — 2025.09</p></div>
-        <p class="paper-title" lang="en">Inter- and Intra-image Refinement for Few Shot Segmentation</p>
-        <p class="publication">独立第一作者 · Pattern Recognition，在审</p>
-        <p><strong>研究动机（S）</strong>上下文分割通过参考图像及其标注，在目标图像中定位对应语义区域。参考与目标之间的外观差异以及前背景混淆容易导致漏分和误检：图内使用单一原型会丢失局部细节，图间特征匹配又可能建立错误对应。因此，需要同时改善参考信息的细节表达与跨图像迁移。</p>
-        <p><strong>方法与贡献（A）</strong>独立设计并实现先验图生成模块，利用类激活图区分核心区域与局部细节，分别聚合区域原型并计算相似度。构建参考与目标双分支，将区域先验引入注意力匹配；训练阶段通过定向掩码抑制假阳性、假阴性位置的错误对应，并开展跨数据集实验与消融验证。</p>
-        <p><strong>结果（R）</strong>在 1-shot 设置下，PASCAL-5<sup>i</sup> 指标由 68.3 提升至 72.9（<b>+4.6 个百分点</b>），COCO-20<sup>i</sup> 由 46.9 提升至 53.1（<b>+6.2 个百分点</b>）。实验覆盖标准、部件及跨域上下文分割的 11 个数据集。</p>
-      </article>
-      <article class="research-entry">
-        <div class="entry-heading"><h3>RTAdapter：测试阶段的参考与目标特征适配</h3><p class="date">2026.01 — 2026.10</p></div>
-        <p class="paper-title" lang="en">RTAdapter: Exploring the Upper Bound of In-Context Segmentation from a Data-Centric Perspective</p>
-        <p class="publication">独立第一作者 · TPAMI，在审</p>
-        <p><strong>研究动机（S）</strong>上下文分割效果不仅取决于模型的匹配机制，也对参考图像质量及参考与目标的匹配程度敏感。已有参考表示中的特征差异可能限制信息迁移，而单纯缩小分布距离又可能造成语义上的错误匹配。本工作探索能否在保持分割模型主体不变的条件下，通过测试阶段的参考特征适配改善这一问题。</p>
-        <p><strong>方法与贡献（A）</strong>独立设计并实现轻量参考特征适配模块：冻结编码器与解码器，保留参考背景特征，通过残差方式仅更新前景表示。以 EMD 分布距离缩小特征差异，并在类别原型与先验图两个层级加入语义对齐约束。将模块接入原型、4D 相关性及 SAM 三类分割方法，评估跨框架增益及额外开销。</p>
-        <p><strong>结果（R）</strong>在 PASCAL 1-shot 上，为 FCP、PAHNet、Matcher、FSSAM 分别带来 1.0、1.3、3.8、1.3 个百分点提升。其中 Matcher 的 mIoU 从 67.7% 提升至 71.5%（<b>+3.8 个百分点</b>），新增参数 0.526M（0.056%），计算量增加 1.48%，推理耗时增加 3.85%。</p>
-      </article>
-      <article class="research-entry">
-        <div class="entry-heading"><h3>DeepEye-400K：眼科指令数据引擎与专科模型</h3><p class="date">2025.09 — 2026.08</p></div>
-        <p class="paper-title" lang="en">DeepEye-400K: Agentic Data Engine for Evidence-Grounded Ophthalmic Instruction Synthesis</p>
-        <p class="publication">独立第一作者 · JBHI，在审</p>
-        <p><strong>研究动机（S）</strong>眼科大模型的专科适配需要高质量指令数据。教材、指南和病例虽然提供可靠知识，但可靠来源并不意味着生成的每个问答样本都可靠：问题可能无法由原文回答，答案或推理解释也可能缺乏证据支撑。因此，数据构建需要逐条核验、修复，并利用反馈减少后续生成中的重复错误。</p>
-        <p><strong>方法与贡献（A）</strong>独立构建以原文证据约束生成、核验与修复的数据引擎，完成元信息过滤、文本切块与匿名化。设计规划、生成、反思、修复及推理解释核验流程，维护文本块局部记忆与跨文本块全局记忆，保留源文件、文本块与证据表述的追溯关系；核验问题可回答性、答案证据和解释一致性，并完成专科模型后训练与评测。</p>
-        <p><strong>结果（R）</strong>构建 <b>375,298 条</b>眼科指令，覆盖问答、选择题及病例，用于 9B 与 35B 模型后训练。在 Multi-Ophthalingua-Choice 的 164 条样本评测中，两种模型的准确率较各自基线提升 3.66、4.26 个百分点，F1 提升 4.55、4.86 个百分点。</p>
-      </article>
-      <p class="note">以上论文均在审；论文状态与实验结果更新至 2026 年 10 月。</p>
-    </section>
-    <section id="internship" aria-labelledby="internship-title">
-      <h2 id="internship-title">实习经历</h2>
-      <article>
-        <div class="entry-heading"><h3>重庆贝奥新视野医疗设备有限公司</h3><p class="date">2025.06 — 2025.09</p></div>
-        <p class="position">多模态 Agent 算法岗</p>
-        <p class="project-name">眼底影像分析 Agent：多模态工具编排与可追溯报告生成</p>
-        <p><strong>项目背景（S）</strong>团队面向眼底设备的自动影像分析需求，需要整合分类、检测、分割及量化工具，生成带影像证据的报告。不同工具的判断可能出现分类冲突，分割或几何量化也可能异常，需要根据当前证据触发补充核验，并保留结果的可追溯性。</p>
-        <p><strong>主要工作（A）</strong>负责专病分割与诊断、Agent 动态编排及报告展示。基于公开及私有数据训练模型，融合专科模型与 VLM 判定；搭建 ReAct 流程，接入图像质控、12 类多标签分类、解剖定位、SAM 分割、血管量化与 VLM 工具，管理共享状态与工具调用。针对分类冲突、分割及量化异常触发补充核验与交互分割，汇总证据生成报告，并配合团队完成云端服务与眼底设备集成。</p>
-        <p><strong>项目成果（R）</strong>团队系统在 200 张图像、224 个疾病条目的报告核验中，错误率由 <b>5.36% 降至 1.79%</b>，纠错率 75%，误改率 0.47%。视杯视盘分割 mDice 由 0.8805 提升至 0.9012，平均每目标交互 1.37 次。系统对接 Kestrel 300、Kestrel 3100 及大广角设备，部署后日均服务约 4,000 份报告。</p>
-      </article>
-    </section>
-  </main>
-  <footer><span>付欧瑞 · 2026</span><a href="#">返回顶部</a></footer>
+  <div class="wrapper">
+    <header class="profile">
+      <a class="name-mark" href="#" aria-label="付欧瑞 首页">OF<span>.</span></a>
+      <h1>付欧瑞 <span>Orfu</span></h1>
+      <p class="position">人工智能方向博士生</p>
+      <p class="affiliation">北京大学 · 未来技术学院</p>
+      <p class="bio">关注视觉信息的理解与迁移，<br>以及多模态系统的实际应用。</p>
+      <div class="social-links"><a href="mailto:orfu@stu.pku.edu.cn">Email</a><span aria-hidden="true">/</span><a href="https://github.com/forypipi" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+      <a class="email" href="mailto:orfu@stu.pku.edu.cn">orfu@stu.pku.edu.cn</a>
+      <nav aria-label="章节导航"><a href="#education"><span>教育经历</span><small>Education</small></a><a href="#research"><span>科研经历</span><small>Research</small></a><a href="#internship"><span>实习经历</span><small>Experience</small></a></nav>
+      <p class="profile-footnote">Beijing, China<br>更新于 2026 年 10 月</p>
+    </header>
+    <main id="main" class="content">
+      <section id="education" class="content-section" aria-labelledby="education-title">
+        <div class="section-heading"><h2 id="education-title">教育经历</h2><span>EDUCATION</span></div>
+        <div class="education-list">
+          <article class="education-item"><div class="education-top"><h3>北京大学</h3><span class="date">2023.09 — 至今</span></div><p>人工智能 · 博士在读</p><p class="muted">未来技术学院 · 预计 2028 年 6 月毕业</p></article>
+          <article class="education-item"><div class="education-top"><h3>北京理工大学</h3><span class="date">2019.09 — 2023.06</span></div><p>数据科学与大数据技术 · 学士</p><p class="muted">校级优秀毕业生 · 校级奖学金</p></article>
+        </div>
+        <p class="honor"><span>荣誉</span>美国大学生数学建模竞赛 Outstanding Winner（特等奖）</p>
+      </section>
+
+      <section id="research" class="content-section publications" aria-labelledby="research-title">
+        <div class="section-heading"><h2 id="research-title">科研经历</h2><span>RESEARCH</span></div>
+        <p class="section-intro">研究上下文分割中的特征匹配与参考表示，并探索证据约束的专科数据构建。</p>
+        <article class="paper">
+          <div class="pub-row">
+            <a class="teaser-link" href="assets/iir.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 IIR 方法图"><img class="teaser" src="assets/iir.webp" alt="IIR 图间与图内特征细化方法框架" width="2000" height="541" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">01 <span>上下文分割</span></p><h3>IIR：图间与图内特征细化</h3><p class="paper-title" lang="en">Inter- and Intra-image Refinement for Few Shot Segmentation</p><p class="paper-meta">独立第一作者 <span>·</span> Pattern Recognition <em>在审</em></p><p class="date">2024.08 — 2025.09</p></div>
+          </div>
+          <div class="paper-description">
+            <p>上下文分割需要将参考图像中的目标信息迁移到新图像。单一原型容易丢失局部细节，外观差异与前背景混淆又可能造成错误匹配，导致漏分和误检。</p>
+            <p>我设计并实现了先验图生成模块，区分核心区域与局部细节，分别聚合区域原型；结合参考与目标双分支，在训练阶段通过定向掩码抑制错误对应，并用跨数据集实验与消融验证。</p>
+            <p class="finding">在 1-shot 设置下，PASCAL-5<sup>i</sup> 由 68.3 提升至 <strong>72.9</strong>，COCO-20<sup>i</sup> 由 46.9 提升至 <strong>53.1</strong>，分别提升 4.6 和 6.2 个百分点；实验覆盖标准、部件及跨域上下文分割的 11 个数据集。</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="pub-row">
+            <a class="teaser-link" href="assets/rtadapter.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 RTAdapter 方法图"><img class="teaser" src="assets/rtadapter.webp" alt="RTAdapter 测试阶段参考特征适配框架" width="2000" height="986" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">02 <span>测试阶段适配</span></p><h3>RTAdapter：参考与目标特征适配</h3><p class="paper-title" lang="en">Exploring the Upper Bound of In-Context Segmentation from a Data-Centric Perspective</p><p class="paper-meta">独立第一作者 <span>·</span> TPAMI <em>在审</em></p><p class="date">2026.01 — 2026.10</p></div>
+          </div>
+          <div class="paper-description">
+            <p>分割效果对参考图像质量及参考与目标的匹配程度敏感，而仅缩小特征分布距离又可能造成语义错配。本工作探索保持分割模型主体不变，通过测试阶段的参考特征适配改善信息迁移。</p>
+            <p>我独立设计并实现轻量适配模块，冻结编码器与解码器、保留背景特征，以残差方式仅更新前景表示。通过 EMD 分布距离和类别原型、先验图两级语义对齐约束，将模块接入原型、4D 相关性及 SAM 三类方法。</p>
+            <p class="finding">PASCAL 1-shot 上，FCP、PAHNet、Matcher、FSSAM 分别提升 1.0、1.3、3.8、1.3 个百分点。Matcher 的 mIoU 从 67.7% 提升至 <strong>71.5%</strong>，新增参数 0.526M（0.056%），计算量增加 1.48%，推理耗时增加 3.85%。</p>
+          </div>
+        </article>
+
+        <article class="paper">
+          <div class="pub-row">
+            <a class="teaser-link" href="assets/deepeye.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 DeepEye-400K 方法图"><img class="teaser" src="assets/deepeye.webp" alt="DeepEye-400K 证据约束的指令数据生成与核验流程" width="2000" height="1375" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">03 <span>专科数据与大模型</span></p><h3>DeepEye-400K：眼科指令数据引擎</h3><p class="paper-title" lang="en">Agentic Data Engine for Evidence-Grounded Ophthalmic Instruction Synthesis</p><p class="paper-meta">独立第一作者 <span>·</span> JBHI <em>在审</em></p><p class="date">2025.09 — 2026.08</p></div>
+          </div>
+          <div class="paper-description">
+            <p>眼科大模型的专科适配需要高质量指令数据，但教材、指南等可靠来源不保证生成样本可靠：问题可能无法由原文回答，答案或推理解释也可能缺乏证据支撑。</p>
+            <p>我独立构建以原文证据约束生成、核验与修复的数据引擎，完成元信息过滤、切块与匿名化。通过规划、生成、反思和修复流程核验问答及解释的一致性，维护局部与全局记忆，将错误反馈用于后续生成，并保留源文件、文本块及证据表述的追溯关系。</p>
+            <p class="finding">构建 <strong>375,298 条</strong>眼科指令，用于 9B 与 35B 模型后训练。在 Multi-Ophthalingua-Choice 的 164 条样本中，准确率较各自基线提升 3.66、4.26 个百分点，F1 提升 4.55、4.86 个百分点。</p>
+          </div>
+        </article>
+        <p class="research-note">论文均在审。以上实验结果与论文状态依据个人研究材料整理。</p>
+      </section>
+
+      <section id="internship" class="content-section" aria-labelledby="internship-title">
+        <div class="section-heading"><h2 id="internship-title">实习经历</h2><span>EXPERIENCE</span></div>
+        <article class="internship-entry">
+          <div class="education-top"><h3>重庆贝奥新视野医疗设备有限公司</h3><span class="date">2025.06 — 2025.09</span></div>
+          <p class="role">多模态 Agent 算法岗</p>
+          <h4>眼底影像分析 Agent</h4>
+          <p>面向眼底设备的自动影像分析，团队需要整合分类、检测、分割和量化工具，处理分类冲突及量化异常，生成带影像证据的可追溯报告。</p>
+          <p>我负责专病分割与诊断、Agent 动态编排及报告展示，训练并融合专科视觉模型与 VLM。基于 ReAct 接入质控、12 类多标签分类、解剖定位、SAM 分割及血管量化工具，管理共享状态，按证据触发补充核验与交互分割，并配合团队完成云端服务及设备集成。</p>
+          <p class="finding">在 200 张图像、224 个疾病条目的核验中，团队系统报告错误率从 5.36% 降至 <strong>1.79%</strong>，纠错率 75%、误改率 0.47%。视杯视盘分割 mDice 从 0.8805 提升至 <strong>0.9012</strong>，平均每目标交互 1.37 次。</p>
+          <p>系统对接 Kestrel 300、Kestrel 3100 及大广角设备，部署后日均服务约 4,000 份报告。</p>
+        </article>
+      </section>
+      <div class="page-footer"><span>© 2026 付欧瑞</span><span>Based on <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener noreferrer">Minimal Light</a></span></div>
+    </main>
+  </div>
 </body>
 </html>

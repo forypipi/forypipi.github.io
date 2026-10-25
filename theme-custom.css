@@ -1,0 +1,75 @@
+/* Chinese content adaptation of yaoyao-liu/minimal-light (CC0-1.0). */
+:root{--navy:#253f56;--accent:#346b91;--muted:#7d8790;--line:#e5e9ed;--soft:#f5f8fa;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-padding-top:30px}
+body{background:#fff;color:#46515b;font:14px/1.85 -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei","PingFang SC",Arial,sans-serif;padding:0;overflow-wrap:break-word}
+a{color:var(--accent);text-decoration:none}
+a:hover{color:#142f48;text-decoration:underline;text-underline-offset:4px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+div.wrapper{width:1080px;max-width:calc(100% - 80px);margin:0 auto;display:grid;grid-template-columns:230px minmax(0,1fr);gap:82px;align-items:start}
+.profile{width:auto;float:none;position:sticky;top:48px;padding:0;margin:64px 0 30px;text-align:left}
+.name-mark{display:grid;place-content:center;width:76px;height:76px;background:#edf2f6;border:1px solid #e1e8ee;border-radius:50%;font:31px/1 Georgia,serif;letter-spacing:-2px;color:var(--navy);position:relative;margin-bottom:24px}
+.name-mark span{display:inline;position:absolute;left:53px;top:39px;color:#7496af;font-size:23px}
+.name-mark:hover{text-decoration:none;background:#e6edf3}
+.profile h1{color:var(--navy);font-size:28px;font-weight:600;line-height:1.5;margin:0 0 9px}
+.profile h1 span{font:20px Georgia,serif;font-weight:400;margin-left:9px;color:#8b939b}
+.profile p{margin:0}
+.profile .position{font-size:13px;color:#3d4b59;margin-bottom:3px}
+.affiliation{font-size:12px;color:#6d7883}
+.profile .bio{font-size:12px;line-height:1.9;color:#78838e;margin:22px 0 19px}
+.social-links{display:flex;gap:12px;align-items:center;font-size:12px;margin-bottom:8px}
+.social-links span{color:#bbc3c9}
+.email{font-size:11px;letter-spacing:.1px}
+.profile nav{border-top:1px solid var(--line);padding-top:23px;margin-top:27px;display:flex;flex-direction:column;gap:0}
+.profile nav a{display:flex;justify-content:space-between;align-items:center;color:#51606d;padding:8px 0;font-size:13px}
+.profile nav a small{display:inline;font-size:10px;color:#a0a8af;margin:0;letter-spacing:.2px}
+.profile nav a:hover{color:var(--accent);text-decoration:none}
+.profile .profile-footnote{font-size:10px;line-height:1.9;color:#9aa3ac;margin-top:38px}
+.content{min-width:0;padding-top:64px}
+.content-section{float:none;width:auto;padding:0 0 42px;border:0;margin:0}
+.section-heading{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding-bottom:13px;margin-bottom:25px}
+.section-heading h2{font-size:22px;line-height:1.5;color:var(--navy);font-weight:600;margin:0;letter-spacing:.4px}
+.section-heading>span{font-size:9px;letter-spacing:1.8px;color:#a2aab1}
+h3,h4{font-family:inherit;color:var(--navy);font-size:15px;line-height:1.6;font-weight:600;margin:0}
+p{margin:0 0 12px}
+.education-list{padding-left:19px;border-left:1px solid #dee5ea;margin-left:3px}
+.education-item{position:relative;margin-bottom:23px}
+.education-item:last-child{margin-bottom:0}
+.education-item:before{content:"";width:7px;height:7px;border-radius:50%;background:#fff;border:2px solid #859daf;position:absolute;left:-23px;top:9px}
+.education-top{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.date{font-size:10px;color:#8b959e;white-space:nowrap;font-variant-numeric:tabular-nums}
+.education-item p{font-size:13px;line-height:1.8;margin:4px 0 0}
+.education-item .muted{font-size:11px;color:#87919b}
+.honor{font-size:11px;color:#7c8791;margin:23px 0 0;padding-left:23px}
+.honor>span{color:var(--accent);margin-right:12px;font-size:10px}
+.publications{margin-top:0}
+.section-intro{font-size:12px;color:#7e8993;margin:-8px 0 28px;line-height:1.9}
+.paper{padding:0 0 28px;margin:0 0 29px;border-bottom:1px solid var(--line)}
+.paper:last-of-type{padding-bottom:0;border-bottom:0;margin-bottom:20px}
+.pub-row{display:grid;grid-template-columns:165px minmax(0,1fr);gap:24px;align-items:center;margin-bottom:19px}
+.teaser-link{display:flex;flex-direction:column;gap:8px;min-width:0;background:#fafbfc;border:1px solid #e9edf0;border-radius:6px;padding:12px 10px 7px}
+.teaser-link:hover{border-color:#bccbd6;text-decoration:none}
+.teaser{width:100%;height:103px;object-fit:contain;display:block;margin:0;border-radius:0;box-shadow:none}
+.teaser-link>span{font-size:9px;text-align:right;color:#879cac}
+.paper-index{font-size:10px;letter-spacing:1px;color:#a0a9b1;margin:0 0 5px}
+.paper-index span{margin-left:10px;letter-spacing:0;color:#83929e}
+.paper-heading h3{font-size:16px;line-height:1.55;margin:0 0 5px}
+.paper-title{font-size:11px;line-height:1.6;color:#7b8791;margin:0 0 9px}
+.paper-meta{font-size:10px;color:#75818c;margin:0 0 4px;line-height:1.9}
+.paper-meta>span{padding:0 4px;color:#b2bcc4}
+.paper-meta em{font-style:normal;font-size:9px;padding:2px 6px;color:#697d8d;background:#eef2f5;border-radius:3px;margin-left:5px;white-space:nowrap}
+.paper-description p,.internship-entry>p{font-size:14px;line-height:1.95;margin:0 0 12px}
+.paper-description p:last-child{margin-bottom:0}
+.finding{color:#516573}
+strong{font-weight:600;color:var(--navy)}
+.research-note{font-size:10px;color:#99a2aa;margin:0}
+.internship-entry .role{font-size:11px;color:#8b959e;margin:5px 0 18px}
+.internship-entry h4{font-size:14px;font-weight:500;margin-bottom:11px}
+.page-footer{border-top:1px solid var(--line);padding:18px 0 30px;display:flex;justify-content:space-between;gap:10px;color:#a1a9b1;font-size:10px}
+.page-footer a{color:#7e94a5}
+.skip-link:not(:focus){position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.skip-link:focus{display:block;padding:8px 20px}
+@media(max-width:1000px){div.wrapper{max-width:calc(100% - 52px);grid-template-columns:205px minmax(0,1fr);gap:42px}.pub-row{grid-template-columns:130px minmax(0,1fr);gap:18px}.teaser{height:98px}.education-top{flex-wrap:wrap;gap:3px 10px}.paper-heading h3{font-size:15px}.profile{top:30px}}
+@media(max-width:760px){body{padding:0}div.wrapper{display:block;width:auto;max-width:calc(100% - 40px);margin:auto}.profile{position:static;text-align:left;width:100%;padding:0;margin:30px 0 0;display:grid;grid-template-columns:62px 1fr;column-gap:17px}.name-mark{grid-row:1/4;margin:0;width:62px;height:62px;font-size:27px}.name-mark span{left:43px;top:31px;font-size:20px}.profile h1{font-size:23px;margin:0 0 2px;line-height:1.4}.profile h1 span{font-size:17px}.profile .position{font-size:12px;line-height:1.7;margin:0}.affiliation{font-size:11px;line-height:1.7}.profile .bio{grid-column:1/-1;margin:16px 0 12px;font-size:12px}.profile .bio br{display:none}.social-links{grid-column:1/-1;font-size:12px;margin:0 0 4px}.email{grid-column:1/-1;font-size:11px}.profile nav{grid-column:1/-1;flex-direction:row;justify-content:space-between;padding-top:13px;margin-top:19px;border-top:1px solid var(--line);gap:18px}.profile nav a{font-size:12px;gap:5px}.profile nav a small{font-size:8px}.profile .profile-footnote{display:none}.content{padding-top:32px}.content-section{padding-bottom:34px}.section-heading{margin-bottom:22px;padding-bottom:10px;gap:12px}.section-heading h2{font-size:20px}.section-heading>span{font-size:8px}.education-item p{font-size:12px}.education-item .muted{font-size:11px}.education-top h3{font-size:14px}.honor{font-size:10px;line-height:1.9;padding-left:21px}.pub-row{grid-template-columns:103px minmax(0,1fr);gap:14px;align-items:start}.teaser-link{padding:10px 7px 6px;margin-top:3px}.teaser{height:83px}.paper-heading h3{font-size:14px}.paper-title{font-size:10px;line-height:1.6}.paper-index{font-size:9px}.paper-meta{font-size:9px}.paper-meta>span{padding:0 2px}.paper-meta em{font-size:8px;padding:1px 4px}.date{font-size:9px}.paper-description p,.internship-entry>p{font-size:13px;line-height:1.95}.paper{padding-bottom:23px;margin-bottom:26px}.section-intro{font-size:11px;margin-bottom:22px}.page-footer{font-size:9px;padding-bottom:24px}.internship-entry .education-top{display:block}.internship-entry .education-top h3{margin-bottom:4px}}
+@media(max-width:360px){div.wrapper{max-width:calc(100% - 30px)}.profile nav a small{display:none}.pub-row{grid-template-columns:90px minmax(0,1fr);gap:12px}.paper-heading h3{font-size:13px}}
+@media print{body{padding:0;font-size:10pt}div.wrapper{display:block;max-width:none;width:auto}.profile{position:static;width:auto;margin:0 0 20px;display:block;padding:0}.name-mark,.profile nav,.profile-footnote,.teaser-link,.page-footer{display:none!important}.content{padding:0}.pub-row{display:block}.content-section{padding-bottom:20px}h2,h3,.pub-row{break-after:avoid}.paper{break-inside:avoid}.profile .bio{margin:8px 0}.profile h1{font-size:24px}.section-heading{margin-bottom:15px}.paper-description p,.internship-entry>p{font-size:10pt}}

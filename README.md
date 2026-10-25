@@ -2,24 +2,20 @@
 
 https://forypipi.github.io/
 
-极简静态学术主页，使用 HTML 与 CSS，不依赖 JavaScript 或构建工具。
+基于 [Minimal Light](https://github.com/yaoyao-liu/minimal-light) 的 HTML 版本适配，保留侧栏与学术项目布局，调整中文排版。主题源文件为 `html_source_file/assets/css/style-no-dark-mode.css`，以 CC0-1.0 发布；副本及许可证位于 `vendor/`。移除了外部字体请求、示例内容、统计脚本，使用本机字体。
 
-## 内容顺序
+## 内容
 
-1. 教育经历
-2. 科研经历：IIR、RTAdapter、DeepEye-400K
-3. 实习经历：眼底影像分析 Agent
+正文按教育经历、科研经历、实习经历排列。科研正文自然呈现问题背景、个人贡献与结果，不显示 STAR 标签。研究方法图来自用户提供的 PPTX；不公开个人照片、手机号或原始简历。论文均标注在审，保留评测范围和团队成果归属。
 
-科研与实习采用 Situation–Action–Result 结构，分别说明动机或背景、个人贡献和评测结果；不单列 Task。正文全部直接显示，不使用卡片、筛选、折叠内容或装饰图片。
+## 编辑
 
-## 修改与预览
+- 在 `index.html` 修改正文。
+- 在 `theme-custom.css` 修改中文排版和主题适配，然后运行 `python build.py`。
+- 样式内联到 HTML，与内容一起发布，避免外部样式缓存造成新旧版错配。不依赖远程字体或样式 CDN。
+- 本地预览：`python -m http.server 4173`。
+- GitHub Pages 从 `main` 分支根目录发布，`.nojekyll` 直接提供静态文件。
 
-在 `index.html` 更新内容，在 `styles.css` 调整排版。在此目录运行 `python -m http.server 4173`，访问 `http://localhost:4173`。
+## 内容依据
 
-使用 GitHub Pages 从 `main` 分支根目录发布，`.nojekyll` 直接提供静态文件。
-
-## 来源与公开范围
-
-内容根据用户提供的简历 PDF 与研究介绍 PPTX 整理，尚未核对论文全文。教育日期以 PDF 为准。论文均标注在审，保留评测范围、指标单位和团队成果归属。后续可根据论文原文进一步核对研究动机、创新点及实验结论。
-
-不公开个人照片、手机号或原始简历。历史提交中的研究方法图片保留在 `assets/`，当前页面不展示这些图片。
+个人简历 PDF 与研究介绍 PPTX，尚未核对论文全文。后续可依据论文原文校准研究动机、创新点与实验结论。
