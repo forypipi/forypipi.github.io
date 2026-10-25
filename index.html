@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5f0">
+  <title>付欧瑞 Orfu · 计算机视觉与多模态智能</title>
+  <meta name="description" content="付欧瑞，北京大学人工智能方向博士生。研究上下文分割、眼科指令数据与多模态 Agent，探索视觉理解在真实场景中的应用。">
+  <meta property="og:title" content="付欧瑞 Orfu · 计算机视觉与多模态智能">
+  <meta property="og:description" content="北京大学博士生 · 上下文分割 / 多模态 Agent / 医学影像分析">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://forypipi.github.io/">
+
+  <link rel="canonical" href="https://forypipi.github.io/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="header">
+    <a class="wordmark" href="#" aria-label="Orfu 首页">orfu<span class="brand-dot">.</span><span class="wordmark-note">付欧瑞</span></a>
+    <nav aria-label="主导航">
+      <a href="#about">关于</a><a href="#research">研究</a><a href="#experience">经历</a><a class="nav-contact" href="#contact">联系我 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> PEKING UNIVERSITY · AI RESEARCH</p>
+        <p class="intro-name">你好，我是付欧瑞 <span>/ Orfu</span></p>
+        <h1 id="hero-title">让视觉理解<br>走向<span class="accent">真实场景</span><span class="period">。</span></h1>
+        <p class="hero-description">北京大学人工智能方向博士生。<br>关注上下文分割、多模态 Agent 与医学影像分析，<br class="desktop-break">探索视觉模型如何理解意图，并形成有据可循的判断。</p>
+        <div class="hero-actions"><a class="button primary" href="#research">探索我的研究 <span aria-hidden="true">↘</span></a><a class="text-link" href="https://github.com/forypipi" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <aside class="profile" aria-label="个人简介">
+        <div class="portrait-frame"><span class="portrait-index">01 / ABOUT ME</span><div class="name-art" aria-label="付欧瑞 Orfu"><span>付</span><span>欧瑞<span class="name-art-dot">.</span></span></div><span class="portrait-caption">OURUI FU</span></div>
+        <div class="profile-meta"><div><strong>付欧瑞</strong><span>博士生 · 北京大学未来技术学院</span></div><span class="location">北京，中国</span></div>
+      </aside>
+      <div class="hero-bottom"><span>COMPUTER VISION & MULTIMODAL INTELLIGENCE</span><a href="#about">向下了解更多 <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section id="about" class="about section container" aria-labelledby="about-title">
+      <div class="section-label"><span>01 / ABOUT</span><h2 id="about-title">关于我</h2></div>
+      <div class="about-body"><p class="lead">我关注<span>视觉信息的理解与迁移</span>，以及这些能力在多模态系统中的实际应用。</p><p>我的研究从上下文分割中的特征匹配出发，进一步探索测试阶段的参考表示适配。在眼科场景中，我也开展证据约束的指令数据构建与专科模型后训练，并参与多模型工具编排、报告核验和系统集成。</p><div class="interest-list" aria-label="研究方向"><span>上下文分割</span><span>多模态 Agent</span><span>医学影像分析</span><span>专科模型后训练</span></div><p class="opportunity"><span class="status-dot"></span> 关注具身智能、计算机视觉与多模态 Agent 算法实习机会。</p></div>
+    </section>
+
+    <section id="research" class="research section container" aria-labelledby="research-title">
+      <div class="section-heading"><div class="section-label"><span>02 / SELECTED RESEARCH</span><h2 id="research-title">研究工作<span class="section-count">03</span></h2></div><p class="section-note">从视觉匹配到证据约束的数据构建</p></div>
+      <div class="filters" role="group" aria-label="按研究方向筛选"><button class="filter active" data-filter="all" aria-pressed="true">全部研究 <span>03</span></button><button class="filter" data-filter="vision" aria-pressed="false">视觉分割 <span>02</span></button><button class="filter" data-filter="data" aria-pressed="false">数据与大模型 <span>01</span></button></div>
+      <p id="filter-status" class="sr-only" aria-live="polite"></p>
+      <article class="project" data-category="vision">
+        <button class="project-figure" data-image="assets/rtadapter.webp" data-caption="RTAdapter 方法框架（来自个人研究介绍）" aria-label="放大 RTAdapter 方法框架"><img src="assets/rtadapter.webp" width="3355" height="1654" alt="RTAdapter 参考与目标特征适配框架" loading="lazy"><span>方法框架 <span aria-hidden="true">↗</span></span></button>
+        <div class="project-content"><div class="project-meta"><span>2026.01 — 2026.10</span><span class="review">TPAMI · 在审</span></div><h3>RTAdapter</h3><p class="project-subtitle">测试阶段的参考与目标特征适配</p><p>冻结编码器与解码器，仅适配参考前景表示。通过分布距离与语义对齐约束，改善参考图像与目标图像的匹配，并接入多种分割框架。</p><div class="result-line"><strong>+3.8 <small>个百分点</small></strong><span>Matcher / PASCAL 1-shot mIoU<br>67.7% → 71.5%</span></div><details><summary>研究细节 <span aria-hidden="true">+</span></summary><div class="details-body"><p>保留参考背景特征，通过残差方式更新前景表示。使用 EMD 分布距离，并在类别原型与先验图两个层级加入语义对齐约束。</p><p>在 FCP、PAHNet、Matcher、FSSAM 上分别带来 1.0、1.3、3.8、1.3 个百分点提升。Matcher 新增参数 0.526M（0.056%），计算量增加 1.48%，推理耗时增加 3.85%。</p><p class="authorship">独立第一作者 · 稿件在审</p></div></details></div>
+      </article>
+      <article class="project" data-category="data">
+        <button class="project-figure" data-image="assets/deepeye.webp" data-caption="DeepEye-400K 证据约束的数据引擎（来自个人研究介绍）" aria-label="放大 DeepEye-400K 数据引擎"><img src="assets/deepeye.webp" width="2487" height="1710" alt="DeepEye-400K 的规划、生成、核验与修复流程" loading="lazy"><span>数据引擎 <span aria-hidden="true">↗</span></span></button>
+        <div class="project-content"><div class="project-meta"><span>2025.09 — 2026.08</span><span class="review">JBHI · 在审</span></div><h3>DeepEye-400K</h3><p class="project-subtitle">证据约束的眼科指令数据引擎与专科模型</p><p>将教材、指南与病例转化为可追溯的指令数据。以原文证据约束生成，结合核验、修复与跨样本记忆，支持专科模型后训练。</p><div class="result-line"><strong>375,298 <small>条</small></strong><span>眼科指令数据<br>覆盖问答、选择题与病例</span></div><details><summary>研究细节 <span aria-hidden="true">+</span></summary><div class="details-body"><p>完成元信息过滤、文本切块与匿名化，维护文本块局部记忆和跨文本块全局记忆，保留源文件、文本块与证据表述之间的追溯关系。</p><p>用于 9B 与 35B 模型后训练。在 Multi-Ophthalingua-Choice 的 164 条样本评测中，准确率较各自基线提升 3.66、4.26 个百分点，F1 提升 4.55、4.86 个百分点。</p><p class="authorship">独立第一作者 · 稿件在审</p></div></details></div>
+      </article>
+      <article class="project" data-category="vision">
+        <button class="project-figure" data-image="assets/iir.webp" data-caption="IIR 图间与图内特征细化方法（来自个人研究介绍）" aria-label="放大 IIR 方法框架"><img src="assets/iir.webp" width="3213" height="870" alt="IIR 先验图生成与定向掩码模块" loading="lazy"><span>方法框架 <span aria-hidden="true">↗</span></span></button>
+        <div class="project-content"><div class="project-meta"><span>2024.08 — 2025.09</span><span class="review">Pattern Recognition · 在审</span></div><h3>IIR</h3><p class="project-subtitle">面向上下文分割的图间与图内特征细化</p><p>针对外观差异与前背景混淆，从图内细节表达和图间特征匹配入手，设计先验图生成与定向掩码模块，改善参考信息的迁移。</p><div class="result-line"><strong>+6.2 <small>个百分点</small></strong><span>COCO-20<sup>i</sup> / 1-shot<br>46.9 → 53.1</span></div><details><summary>研究细节 <span aria-hidden="true">+</span></summary><div class="details-body"><p>利用类激活图区分核心区域与局部细节，分别聚合区域原型、计算相似度。构建参考与目标双分支，训练阶段通过定向掩码抑制错误对应。</p><p>PASCAL-5<sup>i</sup> 的 1-shot 指标由 68.3 提升至 72.9（+4.6 个百分点）。实验覆盖标准、部件及跨域上下文分割的 11 个数据集。</p><p class="authorship">独立第一作者 · 稿件在审</p></div></details></div>
+      </article>
+      <p class="research-footnote">论文状态与实验结果依据个人研究材料整理，更新于 2026 年 10 月。以上工作均在审，尚未列为已发表论文。</p>
+    </section>
+
+    <section id="experience" class="experience section" aria-labelledby="experience-title"><div class="container">
+      <div class="section-heading"><div class="section-label"><span>03 / EXPERIENCE</span><h2 id="experience-title">把研究带入实践</h2></div><span class="experience-date">2025.06 — 2025.09</span></div>
+      <div class="experience-layout"><div><p class="company">重庆贝奥新视野医疗设备有限公司</p><h3>眼底影像分析<br>Agent</h3><p class="role">多模态 Agent 算法实习</p><p>负责专病分割与诊断、Agent 动态编排及报告展示，参与云端服务与眼底设备集成。</p><a class="text-link light" href="mailto:orfu@stu.pku.edu.cn">交流项目经历 <span aria-hidden="true">↗</span></a></div><div class="experience-detail"><p>连接图像质控、12 类多标签分类、解剖定位、SAM 分割、血管量化与 VLM 工具。基于 ReAct 流程对分类冲突及量化异常触发补充核验，汇总影像证据并生成可追溯报告。</p><div class="workflow" aria-label="项目流程"><span>影像与工具分析</span><b aria-hidden="true">→</b><span>动态核验</span><b aria-hidden="true">→</b><span>证据报告</span></div><div class="metrics"><div><strong>5.36% <span>→</span> 1.79%</strong><p>团队系统报告核验错误率</p><small>200 张图像 · 224 个疾病条目</small></div><div><strong>0.8805 <span>→</span> 0.9012</strong><p>视杯视盘分割 mDice</p><small>平均每目标交互 1.37 次</small></div></div><p class="deployment-note">配合团队完成 Kestrel 300、Kestrel 3100 及大广角设备集成，部署后团队系统日均服务约 4,000 份报告。</p></div></div>
+    </div></section>
+
+    <section id="education" class="education section container" aria-labelledby="education-title"><div class="section-label"><span>04 / BACKGROUND</span><h2 id="education-title">教育与技能</h2></div><div class="background-body"><div class="education-row"><span class="timeline-date">2023.09 — 至今</span><div><h3>北京大学</h3><p>人工智能 · 博士在读</p><small>未来技术学院 · 预计 2028 年 6 月毕业</small></div><span class="degree">Ph.D.</span></div><div class="education-row"><span class="timeline-date">2019.09 — 2023.06</span><div><h3>北京理工大学</h3><p>数据科学与大数据技术 · 学士</p><small>校级优秀毕业生 · 校级奖学金</small></div><span class="degree">B.S.</span></div><div class="award"><span aria-hidden="true">✳</span><div><strong>美国大学生数学建模竞赛 Outstanding Winner</strong><p>特等奖</p></div></div><div class="skills"><div><h3>模型与训练</h3><p>Python / PyTorch / Transformers<br>多 GPU 分布式训练 · 多模态模型微调与评测</p></div><div><h3>工程与协作</h3><p>Linux / Git / Docker / Conda<br>Weights & Biases · 模型服务集成</p></div></div></div></section>
+
+    <section id="contact" class="contact section container" aria-labelledby="contact-title"><p class="eyebrow">05 / GET IN TOUCH</p><div class="contact-heading"><h2 id="contact-title">一起探索，<br><span>视觉智能的更多可能。</span></h2><a class="contact-arrow" href="mailto:orfu@stu.pku.edu.cn" aria-label="发送邮件给付欧瑞">↗</a></div><p>欢迎就研究合作、算法实习或相关项目与我交流。</p><div class="contact-links"><a class="email" href="mailto:orfu@stu.pku.edu.cn">orfu@stu.pku.edu.cn</a><button id="copy-email" class="copy-button">复制邮箱</button><a class="text-link" href="https://github.com/forypipi" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p id="copy-status" class="copy-status" role="status"></p></section>
+  </main>
+  <footer class="footer container"><span>© 2026 付欧瑞 · Orfu</span><span>研究、实践与持续探索</span><a href="#">回到顶部 ↑</a></footer>
+  <dialog id="image-dialog" aria-labelledby="image-caption"><button class="dialog-close" aria-label="关闭图片">关闭 ×</button><img id="dialog-image" alt=""><p id="image-caption"></p></dialog>
+</body>
+</html>
