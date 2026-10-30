@@ -276,7 +276,7 @@ strong{font-weight:600;color:var(--navy)}
       <h1>付欧瑞 <span>Orfu</span></h1>
       <p class="position">人工智能方向博士生</p>
       <p class="affiliation">北京大学 · 未来技术学院</p>
-      <p class="bio">研究方向：<br>计算机视觉<br>多模态大模型后训练<br>多模态智能体<br>医学影像分析</p>
+      <p class="bio">研究方向：<br>多模态大模型<br>多模态 Agent<br>计算机视觉<br>医学影像分析</p>
       <div class="social-links"><a href="mailto:orfu@stu.pku.edu.cn">Email</a><span aria-hidden="true">/</span><a href="https://github.com/forypipi" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
       <a class="email" href="mailto:orfu@stu.pku.edu.cn">orfu@stu.pku.edu.cn</a>
       <nav aria-label="章节导航"><a href="#education"><span>教育经历</span><small>Education</small></a><a href="#research"><span>科研经历</span><small>Research</small></a><a href="#projects"><span>项目经历</span><small>Projects</small></a></nav>
@@ -286,10 +286,10 @@ strong{font-weight:600;color:var(--navy)}
       <section id="education" class="content-section" aria-labelledby="education-title">
         <div class="section-heading"><h2 id="education-title">教育经历</h2><span>EDUCATION</span></div>
         <div class="education-list">
-          <article class="education-item"><div class="education-top"><h3>北京大学</h3><span class="date">2023.09 — 至今</span></div><p>人工智能 · 博士在读</p><p class="muted">未来技术学院 · 预计 2028 年 6 月毕业</p></article>
-          <article class="education-item"><div class="education-top"><h3>北京理工大学</h3><span class="date">2019.09 — 2023.06</span></div><p>数据科学与大数据技术 · 学士</p><p class="muted">校级优秀毕业生 · 校级奖学金</p></article>
+          <article class="education-item"><div class="education-top"><h3>北京大学</h3><span class="date">2023.09 - 至今</span></div><p>人工智能 · 博士在读</p><p class="muted">未来技术学院 · 预计 2028 年 6 月毕业</p></article>
+          <article class="education-item"><div class="education-top"><h3>北京理工大学</h3><span class="date">2019.09 - 2023.06</span></div><p>数据科学与大数据技术 · 学士</p><p class="muted">校级优秀毕业生 · 校级奖学金</p></article>
         </div>
-        <p class="honor"><span>荣誉</span>美国大学生数学建模竞赛 Outstanding Winner（特等奖）</p>
+        <p class="honor"><span>荣誉</span>美国大学生数学建模竞赛 <strong>Outstanding Winner（特等奖）</strong></p>
       </section>
 
       <section id="research" class="content-section publications" aria-labelledby="research-title">
@@ -297,12 +297,12 @@ strong{font-weight:600;color:var(--navy)}
         <p class="section-intro">上下文分割：模型侧优化（IIR）与数据侧优化（RTAdapter）；眼科大模型后训练：可信指令数据构建（DeepEye-400K）。</p>
         <article class="paper">
           <div class="pub-row">
-            <a class="teaser-link" href="assets/iir.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 IIR 方法图"><img class="teaser" src="assets/iir.webp" alt="IIR 图间与图内特征细化方法框架" width="2000" height="541" loading="lazy"><span>方法图 ↗</span></a>
-            <div class="paper-heading"><p class="paper-index">01 <span>上下文分割 · 模型侧优化</span></p><h3>IIR：图间与图内特征细化</h3><p class="paper-title" lang="en">Inter- and Intra-image Refinement for Few Shot Semantic Segmentation</p><p class="paper-meta">独立第一作者 <span>·</span> Pattern Recognition <em>在审</em></p><p class="date">2024.08 — 2025.09</p></div>
+            <a class="teaser-link" href="assets/iir.png" target="_blank" rel="noopener noreferrer" aria-label="查看 IIR 方法图"><img class="teaser" src="assets/iir.png" alt="IIR 图间与图内特征细化方法框架" width="2000" height="541" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">01 <span>上下文分割 · 模型侧优化</span></p><h3>IIR：从模型角度探究图间与图内特征优化</h3><p class="paper-title" lang="en">Inter- and Intra-image Refinement for Few Shot Semantic Segmentation</p><p class="paper-meta">独立第一作者 <span>·</span> Pattern Recognition <em>在审</em></p><p class="date">2024.08 - 2025.09</p></div>
           </div>
           <div class="paper-description">
-            <p>上下文分割利用少量参考图像及其掩码，在新图像中分割参考所指定的对象或部件，为<strong>降低像素级标注成本、识别未见类别</strong>提供了一条路径。原型方法通常将参考前景压缩为一个类别向量，再通过相似度生成目标先验图。单一原型容易抹平颜色、纹理等局部差异；外观相似的背景又可能被错误激活，造成漏分和误检。</p>
-            <p>本文从<strong>先验图质量与解码器特征匹配</strong>两个环节优化模型。在 PASCAL-5<sup>i</sup> 的诊断实验中，先验图与最终预测相对真值的 BCE 损失呈正相关（Pearson <strong>r = 0.444</strong>），说明先验图误差与预测误差存在关联。基于这一观察，IIR 将区域原型细化与错误匹配抑制结合起来。</p>
+            <p>上下文分割利用少量参考图像及其掩码，在新图像中分割参考所指定的对象或部件，为<strong>降低像素级标注成本、识别未见类别</strong>提供了一条路径。原型方法通常将参考前景压缩为一个类别向量，再通过相似度生成目标先验图。从同一张图内来说，单一原型容易抹平颜色、纹理等局部差异；从参考-目标图像匹配上来说，外观相似的背景又可能被错误激活，造成漏分和误检。</p>
+            <p>因此本文从<strong>编码器目标先验图质量与解码器参考-目标特征匹配</strong>两个环节优化模型。在 PASCAL-5<sup>i</sup> 的诊断实验中，<strong>先验图与最终预测相对真值的 BCE Loss 呈正相关</strong>。基于这一观察，IIR 将编码器区域原型细化与解码器错误匹配抑制结合起来。</p>
             <p><strong>先验图生成模块（PMGM）</strong>利用类激活图（CAM）划分核心判别区域与局部细节区域，在参考掩码约束下分别聚合两类前景原型，并保留原始前景原型。随后，将不同原型与目标图像中对应的 CAM 区域进行一致性匹配，减少单一类别向量造成的信息丢失，生成更集中、背景噪声更少的先验图。</p>
             <p><strong>定向掩码模块（DDM）</strong>作用于参考–目标双分支解码器：参考分支利用已知掩码细化特征，再引导目标分支预测。训练时定位交叉注意力中前背景标签不一致的像素对，仅屏蔽导致假阳性或假阴性的错误对应，保留其他有效关联。测试时不使用目标标注，也不执行这一掩码操作；训练时按掩码比例缩放保留项，以缓解训练与测试差异。</p>
             <p class="finding">在 ResNet-50、1-shot 设置下，PASCAL-5<sup>i</sup> 的 mIoU 从 <strong>68.3% 提升至 72.9%</strong>，COCO-20<sup>i</sup> 从 <strong>46.9% 提升至 53.1%</strong>，分别提高 4.6 和 6.2 个百分点。评测覆盖标准、部件与跨域分割，并基于 FIVES、STARE 构建眼底血管跨域评测，检验方法对细小结构和复杂拓扑的适应能力。</p>
@@ -310,8 +310,8 @@ strong{font-weight:600;color:var(--navy)}
               <summary>更多实验：多样本、部件分割与模块消融</summary>
               <div class="details-content">
                 <p>在相同 ResNet-50 设置下，5-shot 的 PASCAL-5<sup>i</sup> 从 71.8% 提升至 <strong>75.6%</strong>，COCO-20<sup>i</sup> 从 51.9% 提升至 <strong>59.0%</strong>。LVIS-92<sup>i</sup> 的 1-shot / 5-shot 分别从 14.6% / 20.9% 提升至 21.5% / 26.3%；PASCAL-Part 的 1-shot 从 30.1% 提升至 34.2%。</p>
-                <p>模块消融采用<strong>解码器数量一致的 70.5% 基线</strong>，与主表中的原始 BAM 基线区分：单独加入 PMGM 达到 71.3%，单独加入参考分支与 DDM 达到 71.4%，完整方法达到 72.9%。在包含 PMGM 与参考分支的配置中，逐像素对掩码相比整列掩码提高 1.1 个百分点。</p>
-                <p>先验图相对真值的平均 BCE 从 0.3508 降至 <strong>0.2809（降低 19.93%）</strong>，支持区域原型细化对先验质量的改善。论文列出的评测覆盖 PASCAL-5<sup>i</sup>、COCO-20<sup>i</sup>、LVIS-92<sup>i</sup>、PASCAL-Part、PACO-Part、FSS-1000、DeepGlobe、ISIC、Chest X-Ray、FIVES 与 STARE；不同任务沿用各自评测协议。</p>
+                <p>模块消融：单独加入 PMGM 达到 71.3%，单独加入参考分支与 DDM 达到 71.4%，完整方法达到 72.9%。在包含 PMGM 与参考分支的配置中，逐像素对掩码相比整列掩码提高 1.1 个百分点。</p>
+                <p>先验图相对真值的平均 BCE 从 0.3508 降至 <strong>0.2809（降低 19.93%）</strong>，支持区域原型细化对先验质量的改善。</p>
               </div>
             </details>
           </div>
@@ -319,24 +319,24 @@ strong{font-weight:600;color:var(--navy)}
 
         <article class="paper">
           <div class="pub-row">
-            <a class="teaser-link" href="assets/rtadapter-20261030.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 RTAdapter 方法图"><img class="teaser" src="assets/rtadapter-20261030.webp" alt="RTAdapter 测试阶段参考特征适配框架" width="1548" height="768" loading="lazy"><span>方法图 ↗</span></a>
-            <div class="paper-heading"><p class="paper-index">02 <span>上下文分割 · 数据侧优化</span></p><h3>RTAdapter：参考与目标特征适配</h3><p class="paper-title" lang="en">RTAdapter: Exploring the Upper Bound of In-Context Segmentation from a Data-Centric Perspective</p><p class="paper-meta">独立第一作者 <span>·</span> TPAMI <em>在审</em></p><p class="date">2026.01 — 2026.10</p></div>
+            <a class="teaser-link" href="assets/rtadapter.png" target="_blank" rel="noopener noreferrer" aria-label="查看 RTAdapter 方法图"><img class="teaser" src="assets/rtadapter-20261030.png" alt="RTAdapter 测试阶段参考特征适配框架" width="1548" height="768" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">02 <span>上下文分割 · 数据侧优化</span></p><h3>RTAdapter：从数据角度探索上下文分割上限</h3><p class="paper-title" lang="en">RTAdapter: Exploring the Upper Bound of In-Context Segmentation from a Data-Centric Perspective</p><p class="paper-meta">独立第一作者 <span>·</span> TPAMI <em>在审</em></p><p class="date">2026.01 - 2026.10</p></div>
           </div>
           <div class="paper-description">
-            <p>同一个分割模型面对同一目标图像，仅更换参考图像及其掩码，就可能产生完整预测、局部漏分或背景误检。本文由此研究：<strong>保持模型不变，能否通过改善参考信息提高预测质量？</strong>这与 IIR 的模型侧优化形成互补，重点转向当前参考–目标组合的数据表示。</p>
-            <p>作为诊断，论文将目标图像及其真值掩码用作参考，测量<strong>目标作为参考的经验上界</strong>。PASCAL-5<sup>i</sup> 1-shot 下，FCP、PAHNet、Matcher 的 mIoU 分别从 72.7%、71.6%、67.7% 升至 80.0%、83.3%、86.5%。这一设置依赖目标真值，只用于分析参考信息带来的性能空间；<strong>RTAdapter 的实际适配和预测不使用目标标注</strong>。</p>
-            <p>方法将参考适配建模为<strong>带语义约束的最优传输问题</strong>，共同优化参考–目标的软对应关系与参考前景表示。轻量残差适配器仅更新参考前景特征，保持原始模型参数、目标特征和参考背景特征不变；适配后保留特征的空间布局及维度，可直接接入原有的原型构建、4D 相关性计算或 SAM 提示生成流程。</p>
-            <p>单纯降低分布距离可能将前景对齐到错误区域，因此引入三类约束：<strong>原型保持</strong>限制全局类别语义漂移；<strong>参考语义重建</strong>利用传输得到的目标特征恢复已知参考掩码，检查局部匹配是否正确；<strong>目标先验图蒸馏</strong>以适配前的固定先验约束目标响应，稳定传输与特征更新。传输方案和适配器交替优化，预测仍由原模型完成。</p>
-            <p class="finding">在 PASCAL-5<sup>i</sup> 1-shot 上，FCP、PAHNet、Matcher、FSSAM 的 mIoU 分别提升 <strong>1.0、1.3、3.8、1.3 个百分点</strong>。Matcher 从 67.7% 提升至 <strong>71.5%</strong>，FSSAM 从 81.0% 提升至 <strong>82.3%</strong>。论文还将方法扩展到 MC-LLaVA，在相同复现资源和评测样本下，概念识别、空间定位和视觉选择题准确率分别提高 <strong>2.0、3.8、3.2 个百分点</strong>。</p>
+            <p>同一个分割模型面对同一目标图像，仅更换参考图像及其掩码，就可能产生完整预测、局部漏分或背景误检。本文由此研究：<strong>保持模型不变，能否通过改善参考信息提高预测质量？</strong>这与 IIR 的模型侧优化形成互补，重点转向当前参考–目标组合的数据侧优化。</p>
+            <p>论文将目标图像及其真值掩码用作参考以测试测量<strong>目标作为参考的经验上界</strong>。PASCAL-5<sup>i</sup> 1-shot 下，原型类方法、4D相关性类方法、SAM类方法的 FCP、PAHNet、Matcher 的 mIoU 分别从 72.7%、71.6%、67.7% 升至 80.0%、83.3%、86.5%。我们进一步分析了参考-目标特征两分布之间的距离与分割 BCE Loss 之间的关系，<strong>分布距离与先验图的 BCE Loss 呈正相关</strong>。</p>
+            <p>为了缩小参考-目标两分布之间的距离，我们将参考适配过程建模为<strong>带语义约束的最优传输问题</strong>，共同优化参考–目标的软对应关系与参考前景表示。轻量残差适配器仅更新参考前景特征，保持原始模型参数、目标特征和参考背景特征不变；适配后保留特征的空间布局及维度，可直接接入原有的原型构建、4D 相关性计算或 SAM 提示生成流程。</p>
+            <p>但单纯降低分布距离可能将前景对齐到错误区域，因此引入三类约束：<strong>原型保持</strong>限制全局类别语义漂移；<strong>参考语义重建</strong>利用传输得到的目标特征恢复已知参考掩码，检查局部匹配是否正确；<strong>目标先验图蒸馏</strong>以适配前的固定先验约束目标响应，稳定传输与特征更新。传输方案和适配器交替优化，后续预测仍由原模型完成。</p>
+            <p class="finding">在 PASCAL-5<sup>i</sup> 1-shot 上，FCP、PAHNet、Matcher、FSSAM 的 mIoU 分别提升 <strong>1.0、1.3、3.8、1.3 个百分点</strong>。Matcher 从 67.7% 提升至 <strong>71.5%</strong>，FSSAM 从 81.0% 提升至 <strong>82.3%</strong>。论文还将方法扩展到 MC-LLaVA，概念识别、空间定位和视觉选择题准确率分别提高 <strong>2.0、3.8、3.2 个百分点</strong>。</p>
             <details class="research-details">
               <summary>更多实验：跨模型结果、语义约束与适配开销</summary>
               <div class="details-content">
                 <div class="table-scroll"><table class="results-table"><caption>PASCAL-5<sup>i</sup> · 1-shot · mIoU（%）</caption><thead><tr><th scope="col">方法</th><th scope="col">原基线</th><th scope="col">+ RTAdapter</th><th scope="col">提升（百分点）</th></tr></thead><tbody><tr><th scope="row">FCP*</th><td>72.7</td><td>73.7</td><td>+1.0</td></tr><tr><th scope="row">PAHNet</th><td>71.6</td><td>72.9</td><td>+1.3</td></tr><tr><th scope="row">Matcher*</th><td>67.7</td><td>71.5</td><td>+3.8</td></tr><tr><th scope="row">FSSAM</th><td>81.0</td><td>82.3</td><td>+1.3</td></tr></tbody></table></div>
                 <p class="result-note">* 为论文复现基线；每项适配效果均与对应基线在相同设置下比较。</p>
-                <p><strong>语义约束消融：</strong>Matcher 基线为 67.7%；只最小化 EMD 时降至 67.0%，依次加入原型保持、参考语义重建和目标先验图蒸馏后达到 69.5%、70.9% 和 71.5%。因此，分布距离下降本身不足以保证语义正确。</p>
+                <p><strong>语义约束消融：</strong>Matcher 基线为 67.7%；只最小化 EMD 时降至 67.0%，依次加入原型保持、参考语义重建和目标先验图蒸馏后达到 69.5%、70.9% 和 71.5%。因此，分布距离下降无法约束语义一致性。</p>
                 <p><strong>参考质量分析：</strong>在固定的 100 个目标、每个目标 50 个参考组成的 5,000 对样本中，按 EMD 划分十组，九组获得平均提升。最不相似组提升 4.708 个百分点；最相似组略降 0.037 个百分点，说明收益随参考质量而变化。</p>
-                <p><strong>跨域与多模态：</strong>分割实验涵盖标准、部件和跨域设置。跨域 ISIC 的 1-shot / 5-shot 提升 5.8 / 7.4 个百分点，但 DeepGlobe 分别下降 3.5 / 1.8 个百分点。MC-LLaVA 的 VQA BLEU 从 0.652 提升至 0.697，描述中的概念标识召回率从 0.593 提升至 0.654；这些提升均相对论文自身的复现基线，不与原论文不同资源条件下的结果混比。</p>
-                <p><strong>计算开销：</strong>Matcher 在论文测试配置下，3 次适配更新引入 0.526M 参数（原模型的 0.056%），FLOPs 增加 1.48%，推理耗时增加 3.85%（约 5.679 秒至 5.898 秒）。在测试的 1、3、5、7、9 次更新中，3 次效果最佳，更多更新未带来进一步收益。</p>
+                <p><strong>跨域与多模态：</strong>分割实验涵盖标准、部件和跨域设置。跨域 ISIC 的 1-shot / 5-shot 提升 5.8 / 7.4 个百分点，但 DeepGlobe 分别下降 3.5 / 1.8 个百分点。MC-LLaVA 的 VQA BLEU 从 0.652 提升至 0.697，描述中的概念标识召回率从 0.593 提升至 0.654。</p>
+                <p><strong>计算开销：</strong>Matcher 在论文测试配置下，3 次适配更新引入 0.526M 参数（原模型的 0.056%），FLOPs 增加 1.48%，推理耗时增加 3.85%（约 5.679 秒至 5.898 秒）。</p>
               </div>
             </details>
           </div>
@@ -344,24 +344,23 @@ strong{font-weight:600;color:var(--navy)}
 
         <article class="paper">
           <div class="pub-row">
-            <a class="teaser-link" href="assets/deepeye.webp" target="_blank" rel="noopener noreferrer" aria-label="查看 DeepEye-400K 方法图"><img class="teaser" src="assets/deepeye.webp" alt="DeepEye-400K 证据约束的指令数据生成与核验流程" width="2000" height="1375" loading="lazy"><span>方法图 ↗</span></a>
-            <div class="paper-heading"><p class="paper-index">03 <span>专科数据与大模型</span></p><h3>DeepEye-400K：眼科指令数据引擎与模型后训练</h3><p class="paper-title" lang="en">DeepEye-400K: Agentic Data Engine for Evidence-Grounded Ophthalmic Instruction Synthesis</p><p class="paper-meta">独立第一作者 <span>·</span> JBHI <em>在审</em></p><p class="date">2025.09 — 2026.06</p></div>
+            <a class="teaser-link" href="assets/deepeye.png" target="_blank" rel="noopener noreferrer" aria-label="查看 DeepEye-400K 方法图"><img class="teaser" src="assets/deepeye.png" alt="DeepEye-400K 证据约束的指令数据生成与核验流程" width="2000" height="1375" loading="lazy"><span>方法图 ↗</span></a>
+            <div class="paper-heading"><p class="paper-index">03 <span>专科数据构建与大模型后训练</span></p><h3>DeepEye-400K：眼科指令数据引擎与模型后训练</h3><p class="paper-title" lang="en">DeepEye-400K: Agentic Data Engine for Evidence-Grounded Ophthalmic Instruction Synthesis</p><p class="paper-meta">独立第一作者 <span>·</span> JBHI <em>在审</em></p><p class="date">2025.09 - 2026.06</p></div>
           </div>
           <div class="paper-description">
-            <p>眼科大模型的专科适配需要高质量指令数据，但<strong>来源可靠不等于生成样本可靠</strong>：即使材料来自教材、指南或病例，生成的问题仍可能无法由原文回答，答案和推理解释也可能缺乏证据。DeepEye-400K 将问题拆成可靠来源整理与可信生成过程两部分，重点控制从原文到训练样本的证据一致性。</p>
+            <p>眼科大模型的专科适配需要高质量指令数据，但<strong>来源可靠不等于生成样本可靠</strong>：即使材料来自教材、指南或病例，生成的问题仍可能无法由原文回答，答案和推理解释也可能缺乏证据。DeepEye-400K 将问答对生成拆成可靠来源整理与可信生成过程两部分，重点控制从原文到训练样本的证据一致性。</p>
             <p>数据准备阶段过滤目录、作者信息等元信息并进行文本切块，保留<strong>源文件、文本块编号和证据片段</strong>，让每条样本能够回溯到原始依据。指令覆盖知识问答、选择题和病例推理，支持模型的眼科领域后训练。</p>
             <p>数据引擎由<strong>规划、生成、反思、修复与记忆多 Agent</strong>协作完成。先规划任务并生成候选问答，再核验问题可回答性和答案证据；按错误类型分流到局部修复、重新生成、重新规划或剔除，修复后再次核验。问答通过后，独立生成并检查推理解释，排查对题干或已有对话之外信息的依赖，形成<strong>生成–核验–修复闭环</strong>。</p>
             <p>反馈首先写入局部记忆，指导当前文本块的生成与重试，再去重归纳为<strong>跨文本块复用的全局规则</strong>。数据去重结合精确匹配、Embedding 与 BM25 双路召回、Reranker 重排及 LLM 逐对判别，识别表述不同但作答要求和关键条件相同的重复问答。</p>
             <p class="finding">共生成约 <strong>37.5 万条完整样本</strong>，去重后保留约 <strong>32.4 万条眼科指令</strong>。在 Multi-Ophthalingua-Choice 公开评测上，后训练的 <strong>Qwen 9B、35B-A3B</strong> 模型准确率较各自基线分别提升 <strong>3.66、4.26 个百分点</strong>。</p>
           </div>
         </article>
-        <p class="research-note">论文均在审。实验结果按对应数据集、基线与评测设置分别报告。</p>
       </section>
 
       <section id="projects" class="content-section" aria-labelledby="projects-title">
         <div class="section-heading"><h2 id="projects-title">项目经历</h2><span>PROJECTS</span></div>
         <article class="internship-entry">
-          <div class="education-top"><h3>眼底影像分析 Agent</h3><span class="date">2026.06 — 2026.09</span></div>
+          <div class="education-top"><h3>眼底影像分析 Agent</h3><span class="date">2026.06 - 2026.09</span></div>
           <p class="role">多模态工具编排与可信报告生成</p>
           <p>本项目面向眼底筛查中的多病种识别、病灶量化与报告生成需求。分类模型、分割模型和多模态大模型的结果可能互相冲突，单次调用也难以处理异常量化结果。因此，系统将工具协作、异常核验和影像证据追溯结合起来，生成<strong>带影像证据的可追溯报告</strong>。</p>
           <p>本人负责<strong>多模态大模型分割与诊断、Agent 动态编排及报告可视化输出与展示</strong>，融合专科视觉模型与 VLM 判定。基于 ReAct 框架，针对<strong>分类冲突、分割结果异常、解剖与几何关系异常</strong>三类情况，触发补充核验与交互分割。</p>
