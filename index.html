@@ -319,7 +319,7 @@ strong{font-weight:600;color:var(--navy)}
 
         <article class="paper">
           <div class="pub-row">
-            <a class="teaser-link" href="assets/rtadapter.png" target="_blank" rel="noopener noreferrer" aria-label="查看 RTAdapter 方法图"><img class="teaser" src="assets/rtadapter.png" alt="RTAdapter 测试阶段参考特征适配框架" width="1548" height="768" loading="lazy"><span>方法图 ↗</span></a>
+            <a class="teaser-link" href="assets/rtadapter.png" target="_blank" rel="noopener noreferrer" aria-label="查看 RTAdapter 方法图"><img class="teaser" src="assets/rtadapter-20261030.png" alt="RTAdapter 测试阶段参考特征适配框架" width="1548" height="768" loading="lazy"><span>方法图 ↗</span></a>
             <div class="paper-heading"><p class="paper-index">02 <span>上下文分割 · 数据侧优化</span></p><h3>RTAdapter：从数据角度探索上下文分割上限</h3><p class="paper-title" lang="en">RTAdapter: Exploring the Upper Bound of In-Context Segmentation from a Data-Centric Perspective</p><p class="paper-meta">独立第一作者 <span>·</span> TPAMI <em>在审</em></p><p class="date">2026.01 - 2026.10</p></div>
           </div>
           <div class="paper-description">
@@ -348,7 +348,7 @@ strong{font-weight:600;color:var(--navy)}
             <div class="paper-heading"><p class="paper-index">03 <span>专科数据构建与大模型后训练</span></p><h3>DeepEye-400K：眼科指令数据引擎与模型后训练</h3><p class="paper-title" lang="en">DeepEye-400K: Agentic Data Engine for Evidence-Grounded Ophthalmic Instruction Synthesis</p><p class="paper-meta">独立第一作者 <span>·</span> JBHI <em>在审</em></p><p class="date">2025.09 - 2026.06</p></div>
           </div>
           <div class="paper-description">
-            <p>眼科大模型的专科适配需要高质量指令数据，但<strong>来源可靠不等于生成样本可靠</strong>：即使材料来自教材、指南或病例，生成的问题仍可能无法由原文回答，答案和推理解释也可能缺乏证据。DeepEye-400K 将问答对生成拆成可靠来源整理与可信生成过程两部分，重点控制从原文到训练样本的证据一致性。</p>
+            <p>大模型的专科后训练需要高质量指令数据，但我们发现<strong>数据来源可靠不等于生成样本可靠</strong>：即使材料来自教材、指南或病例，生成的问题仍可能无法由原文回答，答案和推理解释也可能缺乏证据。DeepEye-400K 将问答对生成拆成<strong>可靠来源整理</strong>与<strong>可信生成过程</strong>两部分，重点控制从原文到训练样本的证据一致性。</p>
             <p>数据准备阶段过滤目录、作者信息等元信息并进行文本切块，保留<strong>源文件、文本块编号和证据片段</strong>，让每条样本能够回溯到原始依据。指令覆盖知识问答、选择题和病例推理，支持模型的眼科领域后训练。</p>
             <p>数据引擎由<strong>规划、生成、反思、修复与记忆多 Agent</strong>协作完成。先规划任务并生成候选问答，再核验问题可回答性和答案证据；按错误类型分流到局部修复、重新生成、重新规划或剔除，修复后再次核验。问答通过后，独立生成并检查推理解释，排查对题干或已有对话之外信息的依赖，形成<strong>生成–核验–修复闭环</strong>。</p>
             <p>反馈首先写入局部记忆，指导当前文本块的生成与重试，再去重归纳为<strong>跨文本块复用的全局规则</strong>。数据去重结合精确匹配、Embedding 与 BM25 双路召回、Reranker 重排及 LLM 逐对判别，识别表述不同但作答要求和关键条件相同的重复问答。</p>
